@@ -76,7 +76,7 @@ void print(Node* curr){
 	float GPA = curr->getStudent()->GPA;
 	int id = curr->getStudent()->student_id;
 
-	std::cout << first_name << " " << last_name << "\t" << "(" << std::setprecision(3)<< GPA << ", " << id << ")\n";
+	std::cout << first_name << " " << last_name << "\t" << "(gpa=" << std::setprecision(3)<< GPA << ", id=" << id << ")\n";
 	print(curr->getNext());
 	
 }
